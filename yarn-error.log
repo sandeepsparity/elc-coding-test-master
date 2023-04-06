@@ -1,0 +1,91 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add @material-ui/corenpm install @material-ui/core
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@material-ui%2fcorenpm: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "web-starter-template",
+    "version": "0.1.0",
+    "description": "The Web Starter Template (WST) is a starting point for creating Front End Web applications.",
+    "main": "app.js",
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "dependencies": {
+      "@material-ui/core": "^4.4.0",
+      "express": "^4.17.1",
+      "install": "^0.13.0",
+      "npm": "^6.11.2"
+    },
+    "scripts": {
+      "servers": "NODE_ENV=development gulp watch",
+      "dev-server": "NODE_ENV=development gulp dev_server",
+      "node-server": "NODE_ENV=development nodemon server/app.js",
+      "prod": "NODE_ENV=production gulp prod",
+      "dev-tests": "NODE_ENV=development gulp tests",
+      "image-min": "NODE_ENV=development gulp images",
+      "sass": "NODE_ENV=development gulp sass",
+      "third-party": "NODE_ENV=development gulp vendor"
+    },
+    "keywords": [
+      "Web",
+      "Front",
+      "End",
+      "Template"
+    ],
+    "author": "Shaun Hinchy",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.3.4",
+      "@babel/preset-env": "7.0.0-beta.34",
+      "@babel/preset-react": "^7.0.0-beta.36",
+      "babel-loader": "8.0.0-beta.0",
+      "babel-preset-react": "^6.24.1",
+      "browser-sync": "^2.26.3",
+      "gulp": "3.9.1",
+      "gulp-autoprefixer": "4.0.0",
+      "gulp-git": "^2.5.0",
+      "gulp-imagemin": "4.0.0",
+      "gulp-mustache": "3.0.0",
+      "gulp-rename": "1.2.2",
+      "gulp-sass": "3.1.0",
+      "gulp-sourcemaps": "2.6.1",
+      "nodemon": "^1.14.7",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "uglify-js": "3.2.2",
+      "webpack": "3.10.0",
+      "webpack-stream": "4.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
